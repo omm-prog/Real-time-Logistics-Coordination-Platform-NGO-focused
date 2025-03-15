@@ -1,0 +1,185 @@
+/* 🌟 Main Layout - Clean & Modern */
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+  width: 100%;
+}
+
+/* 🔹 Top Right Buttons - Better Spacing */
+.top-right-buttons {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 12px;
+}
+
+/* 🔴 Logout Button - Sleek Look */
+.logout-btn {
+  background-color: #ff4d4d;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(255, 77, 77, 0.4);
+}
+
+.logout-btn:hover {
+  background-color: #cc0000;
+  transform: scale(1.05);
+}
+
+/* 📌 Content Layout - Balanced Spacing */
+.content {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 40px;
+}
+
+/* 🟦 Grid Layout - More Adaptive */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 50px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* 🎴 Card Styling - Soft Shadows & Smooth Corners */
+.card {
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  transition: all 0.3s ease-in-out;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+/* 🆕 Profile & History Section */
+.profile, .history {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 500;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+}
+
+/* 📝 Edit Profile Section */
+.name-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 20px;
+  font-weight: 600;
+  justify-content: center;
+}
+
+.name-input {
+  font-size: 16px;
+  padding: 6px;
+  border: 2px solid #007bff;
+  border-radius: 6px;
+  outline: none;
+}
+
+.save-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.save-btn:hover {
+  background-color: #218838;
+}
+
+/* 📊 Donation Table - Cleaner Look */
+.donation-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.donation-table thead {
+  background: linear-gradient(to right, #004e92, #000428);
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.donation-table th, .donation-table td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.donation-table tbody tr:hover {
+  background: #f8f9fa;
+  cursor: pointer;
+}
+
+/* 📱 Responsive Design - More Friendly */
+@media (max-width: 1024px) {
+  .grid {
+      gap: 40px;
+  }
+  .top-right-buttons {
+      top: 15px;
+      right: 15px;
+  }
+  .donation-table th, .donation-table td {
+      font-size: 14px;
+      padding: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+      gap: 10px;
+  }
+  .top-right-buttons {
+      top: 10px;
+      right: 10px;
+      gap: 8px;
+  }
+  .logout-btn {
+      font-size: 14px;
+      padding: 8px 14px;
+  }
+  .donation-table th, .donation-table td {
+      font-size: 12px;
+      padding: 10px;
+  }
+}
