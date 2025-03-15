@@ -1,4 +1,4 @@
-# 🌍 Smart Waste & Food Management System [**(GitHub)**](https://github.com/omm-prog/Food-Waste-Management)
+# 🌍 Smart Waste & Food Management System
 
 ## 🚀 Technologies Used
 **React, Firebase, Google Maps API (Web & Mobile)**
