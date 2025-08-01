@@ -1,4 +1,4 @@
-# 🌍 Smart Waste & Food Management System
+# 🌍 Real-time Logistics Coordination Platform (NGO-focused)
 
 A comprehensive web platform that connects food donors with NGOs to reduce food waste and support communities in need.
 
